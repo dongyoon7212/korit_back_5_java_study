@@ -35,6 +35,8 @@ public class Operation06 {
         boolean b = name == name2; // false
         boolean c = name == "이동윤"; // true
 
+        System.out.println("테스트 코드 작성");
+
 
     }
 
