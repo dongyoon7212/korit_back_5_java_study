@@ -41,6 +41,7 @@ public class Operation05 {
 //        System.out.println(result);
 
         //commit 추가
+        //commit 추가
 
     }
 
