@@ -6,6 +6,7 @@ public class Operation07 {
         System.out.println("변경사항 추가dd");
         System.out.println("변경사항 추가dd");
         System.out.println("변경사항 추가dd");
+        System.out.println("커밋 체크");
 
 
     }
