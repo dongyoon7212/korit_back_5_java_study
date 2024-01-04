@@ -21,6 +21,11 @@ public class Computer {
       this.type = type;
    }
 
+   /*
+   * this
+   * 자기자신의 주소값
+   * */
+
    //void 리턴 자료형
    void showInfo() {
       System.out.println("type " + type);

@@ -22,5 +22,8 @@ public class ComputerMain {
 
         computer1.showInfo();
         computer2.showInfo();
+
+        computer1.type = "데스크탑";
+        computer1.showInfo();
     }
 }
