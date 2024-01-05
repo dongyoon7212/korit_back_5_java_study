@@ -17,7 +17,7 @@ public class MemberService {
         return value;
     }
 
-    boolean addMember() {
+    boolean addMember(Member[] members) {
         String code = null;
         String name = null;
         String age = null;
@@ -45,6 +45,6 @@ public class MemberService {
 
         MemberRepository memberRepository = new MemberRepository();
 
-        return memberRepository.insert(member) > 0;
+        return memberRepository.insert(members, member) > 0;
     }
 }

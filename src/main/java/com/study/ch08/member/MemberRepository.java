@@ -2,8 +2,7 @@ package com.study.ch08.member;
 
 public class MemberRepository {
 
-    int insert(Member member) {
-        Member[] members = new Member[3];
+    int insert(Member[] members, Member member) {
         for (int i = 0; i < members.length; i++) {
             if(members[i] == null) {
                 members[i] = member;
