@@ -10,7 +10,7 @@ public class MemberMain {
         Member[] members = new Member[3];
         String selectedMenu = null;
 
-        while(true) {
+        while (true) {
             System.out.println("[[ 회원 관리 프로그램 ]]");
             System.out.println("1. 회원 등록");
             System.out.println("2. 회원 전체 조회");
@@ -19,28 +19,29 @@ public class MemberMain {
             System.out.print("메뉴 선택 >>> ");
             selectedMenu = scanner.nextLine();
 
-            if("1".equals(selectedMenu)) {
+            if ("1".equals(selectedMenu)) {
                 int emptyCount = 0;
                 for (int i = 0; i < members.length; i++) {
-                    if(members[i] == null) {
+                    if (members[i] == null) {
                         emptyCount++;
                     }
                 }
                 if (emptyCount > 0) {
-                    boolean responseData = memberService.addMember(members);
-                    if (responseData) {
-                        System.out.println("<<< 회원 등록 완료 >>>");
-                    } else {
-                        System.out.println("<<< 회원 등록 취소 >>>");
-                    }
-                } else {
                     System.out.println("회원을 등록할 수 없습니다.");
+                    continue;
+                }
+
+                boolean responseData = memberService.addMember(members);
+                if (responseData) {
+                    System.out.println("<<< 회원 등록 완료 >>>");
+                } else {
+                    System.out.println("<<< 회원 등록 취소 >>>");
                 }
 
             } else if ("2".equals(selectedMenu)) {
                 System.out.println("<<< 회원 전체 조회 >>>");
                 for (int i = 0; i < members.length; i++) {
-                    if(members[i] == null) {
+                    if (members[i] == null) {
                         System.out.println("NULL");
                         continue;
                     }
