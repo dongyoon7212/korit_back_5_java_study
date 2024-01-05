@@ -20,18 +20,23 @@ public class MemberMain {
             selectedMenu = scanner.nextLine();
 
             if("1".equals(selectedMenu)) {
+                int emptyCount = 0;
                 for (int i = 0; i < members.length; i++) {
-                    if(members[i] != null) {
-                        System.out.println("등록 할 수 없습니다.");
-                        break;
+                    if(members[i] == null) {
+                        emptyCount++;
                     }
                 }
-                boolean responseData = memberService.addMember(members);
-                if (responseData) {
-                    System.out.println("<<< 회원 등록 완료 >>>");
+                if (emptyCount > 0) {
+                    boolean responseData = memberService.addMember(members);
+                    if (responseData) {
+                        System.out.println("<<< 회원 등록 완료 >>>");
+                    } else {
+                        System.out.println("<<< 회원 등록 취소 >>>");
+                    }
                 } else {
-                    System.out.println("<<< 회원 등록 취소 >>>");
+                    System.out.println("회원을 등록할 수 없습니다.");
                 }
+
             } else if ("2".equals(selectedMenu)) {
                 System.out.println("<<< 회원 전체 조회 >>>");
                 for (int i = 0; i < members.length; i++) {
