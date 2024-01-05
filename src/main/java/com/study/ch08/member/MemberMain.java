@@ -26,7 +26,7 @@ public class MemberMain {
                         emptyCount++;
                     }
                 }
-                if (emptyCount > 0) {
+                if (emptyCount == 0) {
                     System.out.println("회원을 등록할 수 없습니다.");
                     continue;
                 }
