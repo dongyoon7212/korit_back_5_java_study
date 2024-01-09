@@ -6,7 +6,7 @@ public class ElectronicDeviceMain {
 
         new RemoteController();
 
-        // 익명 클래스
+        // (1회용) 익명 클래스
         ElectronicDevice electronicDevice = new ElectronicDevice() {
             @Override
             void showDeviceState() {

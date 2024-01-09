@@ -1,7 +1,7 @@
 package com.study.ch11;
 
 public class Phone {
-    static int autoCount = 0;
+    static int autoCount = 0; // static Phone클래스가 사용되는 곳은 공유
     int serialNumber;
     Company company;
 
