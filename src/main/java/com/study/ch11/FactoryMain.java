@@ -16,3 +16,14 @@ public class FactoryMain {
     }
 
 }
+
+/*
+* 접근 지정자
+*
+* Public
+* Private
+* Protected
+* Default
+*
+*
+* */

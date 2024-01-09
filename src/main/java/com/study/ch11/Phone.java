@@ -1,7 +1,5 @@
 package com.study.ch11;
 
-import com.study.ch10.Power;
-
 public class Phone {
     static int autoCount = 0;
     int serialNumber;
