@@ -9,7 +9,7 @@ public class Factory {
     private static Factory instance;
     private String factoryName;
     private int autoCount;
-    private final int DEFAULT_NUMBER = 2024000;
+    private final int DEFAULT_NUMBER = 20240000;
 
     // 싱글톤 - 생성자는 private로 외부 생성을 막아준다.
     private Factory() {}
