@@ -1,7 +1,5 @@
 package com.study.ch16;
 
-import com.study.ch02.PersonMain;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,20 +21,25 @@ public class MemberMain {
         return  null;
     }
 
+    public static void menuPrint() {
+        System.out.println("회원 관리 프로그램");
+        System.out.println("1. 회원 등록");
+        System.out.println("2. 회원 이름 수정");
+        System.out.println("3. 회원 주소 수정");
+        System.out.println("4. 회원 이름으로 조회");
+        System.out.println("5. 회원 전체 조회");
+        System.out.println("6. 회원 삭제");
+        System.out.println("q. 프로그램 종료");
+        System.out.print("메뉴 선택 >> ");
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String selectedMenu = null;
+        // 메소드 안에 있는 변수들은 초기화가 일어나야함 하지만 String 같은 경우는 자동으로 null이 지정됨(생략가능), int는 값 초기화 해야함
 
         while(true) {
-            System.out.println("회원 관리 프로그램");
-            System.out.println("1. 회원 등록");
-            System.out.println("2. 회원 이름 수정");
-            System.out.println("3. 회원 주소 수정");
-            System.out.println("4. 회원 이름으로 조회");
-            System.out.println("5. 회원 전체 조회");
-            System.out.println("6. 회원 삭제");
-            System.out.println("q. 프로그램 종료");
-            System.out.print("메뉴 선택 >> ");
+            menuPrint();
             selectedMenu = scanner.nextLine();
 
             if("q".equalsIgnoreCase(selectedMenu)) {
@@ -48,8 +51,8 @@ public class MemberMain {
                  * 주소 >> 부산 동래구
                  * << 등록이 완료되었습니다. >>
                  */
-                String name= null;
-                String address =null;
+                String name = null;
+                String address = null;
                 System.out.println("[ 회원 등록하기 ]");
                 System.out.print("이름 >> ");
                 name = scanner.nextLine();
