@@ -31,10 +31,6 @@ public class StudentListMain {
             studentArray[i] = new Student("이동", 26);
         }
 
-        for (Student student : studentArray) {
-
-            System.out.println(student);
-        }
     }
 
 }
