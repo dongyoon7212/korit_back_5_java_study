@@ -21,7 +21,7 @@ public class AdditionMain {
             System.out.println("람다식으로 구현한 add메소드");
             return q + w; // 변수명은 상관없음, 자료형만 중요
         };
-        // lamda(람다)식
+        // lambda(람다)식
         System.out.println(addition3.add(50, 60));
 
         // 1. 람다식의 매개변수 자료형은 생략할 수 있다.
