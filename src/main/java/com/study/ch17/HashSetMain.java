@@ -1,7 +1,5 @@
 package com.study.ch17;
 
-import com.study.ch13.A;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
