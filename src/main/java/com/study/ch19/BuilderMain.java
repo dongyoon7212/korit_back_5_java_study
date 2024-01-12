@@ -23,6 +23,12 @@ public class BuilderMain {
                 .phone("01094027212")
                 .build();
 
+        Book book = Book.builder()
+                .code("1234")
+                .name("어린왕자")
+                .build();
+
+        System.out.println(book);
     }
 
 }
