@@ -18,6 +18,11 @@ public class BuilderMain {
 //                .build();
 
         System.out.println(car);
+
+        Member member = Member.builder()
+                .phone("01094027212")
+                .build();
+
     }
 
 }
