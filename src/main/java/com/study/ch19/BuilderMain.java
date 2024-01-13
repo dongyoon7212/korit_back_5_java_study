@@ -50,6 +50,22 @@ public class BuilderMain {
                 .build();
 
         System.out.println(music);
+
+        Cafe cafe = Cafe.builder()
+                .cafeName("투썸플레이스")
+                .menuCount(16)
+                .location("다대포")
+                .build();
+
+        System.out.println(cafe);
+
+        Cafe cafe2 = Cafe.builder()
+                .cafeName("셀렉토 커피")
+                .location("낫개역")
+                .menuCount(10)
+                .build();
+
+        System.out.println(cafe2);
     }
 
 }
