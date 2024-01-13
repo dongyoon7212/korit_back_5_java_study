@@ -29,6 +29,27 @@ public class BuilderMain {
                 .build();
 
         System.out.println(book);
+
+        MacBook macBook = MacBook.builder()
+                .cpu("M1")
+                .ram("8GB")
+                .build();
+
+        System.out.println(macBook);
+
+        Phone phone = Phone.builder()
+                .companyName("애플")
+                .modelName("아이폰12Pro")
+                .build();
+
+        System.out.println(phone);
+
+        Music music = Music.builder()
+                .type("팝송")
+                .musicTitle("CPR")
+                .build();
+
+        System.out.println(music);
     }
 
 }
