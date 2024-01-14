@@ -66,6 +66,15 @@ public class BuilderMain {
                 .build();
 
         System.out.println(cafe2);
+
+        Book2 book2 = Book2.builder()
+                .name("어린왕자")
+                .code("1234")
+                .build();
+
+        System.out.println(book2);
     }
+
+
 
 }

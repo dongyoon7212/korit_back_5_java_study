@@ -10,5 +10,4 @@ public class CompanyMain {
 
         companyService1.create();
     }
-
 }

@@ -1,10 +1,17 @@
 package com.study.ch13.practice;
 
+import com.study.ch13.Car;
+
 public class Company {
     private static Company instance;
     private String companyName;
     private int autoCount;
     private final int DEFUALT_NUMBER = 20240000;
+
+    public Company(String companyName, int autoCount) {
+        this.companyName = companyName;
+        this.autoCount = autoCount;
+    }
 
     private Company() {}
 
@@ -17,7 +24,6 @@ public class Company {
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
-        System.out.println(companyName);
     }
 
     public Product produce(String model) {
