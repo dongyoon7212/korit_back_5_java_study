@@ -10,4 +10,12 @@ public class CompanyService {
     boolean isFull() {
         return companyRepository.getEmptyIndex() == -1;
     }
+
+    void append(Company company) {
+        companyRepository.insert(company);
+    }
+
+    void showCompanyInfo() {
+
+    }
 }

@@ -31,7 +31,15 @@ public class CompanyMain {
                     continue;
                 }
 
+                System.out.print("회사 이름 : ");
+                name = scanner.nextLine();
+                System.out.print("회사 코드 : ");
+                code = scanner.nextLine();
+
+                Company company = new Company(name, code);
+
             } else if ("2".equals(selectedMenu)) {
+                System.out.println("<<< 회사 조회 >>>");
 
             } else if ("q".equalsIgnoreCase(selectedMenu)) {
                 System.out.println("<<< 프로그램을 종료합니다. >>>");

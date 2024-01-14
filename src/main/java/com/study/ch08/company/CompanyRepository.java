@@ -15,4 +15,8 @@ public class CompanyRepository {
         }
         return -1;
     }
+
+    void insert(Company company) {
+        companies[getEmptyIndex()] = company;
+    }
 }
